@@ -83,6 +83,8 @@ submitBtn.addEventListener('click', () => {
     if(answer) {
        if(answer === quizData[currentQuiz].correct) {
            score++
+       } else {
+        time -= 10;
        }
 
        currentQuiz++
@@ -117,8 +119,8 @@ countDownEl.innerHTML = `${minutes}:${seconds}`;
 time--;
 }
 
-function shaveTime(){
-if (answer === false ){
- time -= timeShave;  
-}
-}
+// function shaveTime(){
+// if (answer === false ){
+//  time -= timeShave;  
+// }
+// }
