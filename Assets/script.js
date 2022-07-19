@@ -48,6 +48,7 @@ const submitBtn = document.getElementById('submit')
 let currentQuiz = 0
 let score = 0
 
+
 loadQuiz()
 
 function loadQuiz() {
@@ -77,6 +78,15 @@ function getSelected() {
     return answer
 }
 
+// function startQuiz(){
+//     updateCountdown();
+//     loadQuiz();
+// };
+
+startBtn.addEventListener("click", function(){
+   startQuiz(); 
+});
+
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
@@ -105,6 +115,7 @@ const startingMinutes = 1;
 let time = startingMinutes * 60;
 var timeShave = 10
 
+
 const countDownEl = document.getElementById('countDown');
 
 setInterval(updateCountdown, 1000); 
@@ -120,9 +131,7 @@ time--;
 }
 
 function endQuiz(){
-    if (time == 0){
-    clearInterval(time)
-    }
+    if (time === 0)
+    clearInterval(setInterval)
 }
-
  
