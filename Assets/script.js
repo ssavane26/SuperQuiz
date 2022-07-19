@@ -83,9 +83,9 @@ function getSelected() {
 //     loadQuiz();
 // };
 
-startBtn.addEventListener("click", function(){
-   startQuiz(); 
-});
+// startBtn.addEventListener("click", function(){
+//    startQuiz(); 
+// });
 
 
 submitBtn.addEventListener('click', () => {
@@ -128,10 +128,17 @@ seconds = seconds < 1 ? '0' + seconds : seconds;
 
 countDownEl.innerHTML = `${minutes}:${seconds}`;
 time--;
+
+if(time <= 0) {
+    countDownEl.innerHTML = "0:0"
+} time--; 
+
+
 }
 
 function endQuiz(){
-    if (time === 0)
+    if (countDownEl == 0)
     clearInterval(setInterval)
+    
 }
  
