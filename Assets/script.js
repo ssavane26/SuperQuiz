@@ -119,8 +119,10 @@ countDownEl.innerHTML = `${minutes}:${seconds}`;
 time--;
 }
 
-// function shaveTime(){
-// if (answer === false ){
-//  time -= timeShave;  
-// }
-// }
+function endQuiz(){
+    if (time == 0){
+    clearInterval(time)
+    }
+}
+
+ 
