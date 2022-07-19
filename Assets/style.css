@@ -22,6 +22,12 @@
   .quiz-header{
     padding: 4rem;
   }
+
+  h1{
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px;
+  }
   h2{
     padding: 1rem;
     text-align: center;
@@ -61,7 +67,8 @@
   align-items: center;
   justify-content: center;
   font-size: 50px;
-  margin: 0;
+  margin: 20;
   height: 70px;
   width: 200px;
 }
+
